@@ -10,6 +10,7 @@ nconf.argv().env().file({file: 'env/cse.json'});
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var symbols = require('./routes/symbols');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/apis/symbols', symbols);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
