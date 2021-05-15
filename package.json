@@ -1,0 +1,23 @@
+{
+  "name": "cse",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED='0' supervisor ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "csv": "^1.1.0",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "handlebars": "^4.0.6",
+    "hbs": "~4.0.1",
+    "lodash": "^4.17.2",
+    "morgan": "~1.7.0",
+    "nconf": "0.10.0",
+    "request": "2.81.0",
+    "serve-favicon": "~2.3.0"
+  }
+}
